@@ -1,0 +1,54 @@
+$$ Assignment behaviors
+
+"<-" gentle assignment, normal assignment
+	Overwritable
+	"->" writes to beginning of file, "<-" writes to end
+"=+" binding oath, value is locked after assignment
+	Cannot be reassigned
+"~>" suggestive bind, if not statement
+	only binds in if, else, or when statements
+	checks if a file can be written to then writes to direction of ~
+":==" denial assignment, 
+	like if x :== 5, x will return !5
+"<=~" reverse assignment
+	using x :== 5, y <=~ x would return y = 5
+"~." secret assignment, is valid only if value is not returned
+	local variable
+"]->" forced reassignment, reasigns to vectors or ascii
+
+$$ Assignment types
+
+"probably" converts if not of the right type, silent
+"maybe" converts if not the right type, loud
+"def" will only run if right type
+
+$$ Features
+
+file <- "output.txt"
+	import output.txt as file, with options to use as module or directory
+
+pair:1 *section*
+pair:1 *section2*
+	makes 2 sections pairable and both are able to be called by
+	something like "pair:1"
+
+cmd
+	defines that it is running with logic inside cmd
+
+some kind of http request/ssh requesting
+
+circle [*definition*]{
+}
+	simple looping with logic
+
+arg functionality
+
+timer 
+	define timer in customizable time frame, and time schedulers
+	schedule *name*{
+	}
+catch and throw built in
+
+lists, sets, dictionaries, paired sets, and matrixes
+
+support for modules
